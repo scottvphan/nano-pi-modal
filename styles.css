@@ -9,3 +9,17 @@ body {
     color: rgb(0, 176, 212);
 }
 
+.backdrop {
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.help-modal {
+    width: 80%;
+    height: 85%;
+    border-radius: 20px;
+    background: white;
+}
