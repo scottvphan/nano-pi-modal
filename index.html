@@ -15,8 +15,8 @@
 <body>
     <div class="backdrop"></div>
     <div class="help-modal">
-        <p class="link dont-show-again">Don't show this again</p>
-        <div class="top-container">
+        <p class="link dont-show-again hidden">Don't show this again</p>
+        <div class="top-container hidden">
             <h1>John, here’s what you’ll see after closing this message.</h1>
             <p>
                 You will see a message requesting a letter of protection for a client of yours. After reviewing, you
@@ -45,10 +45,10 @@
                 <div class="help-card-container">
                     <img src="https://picsum.photos/500/500" class="circle">
                     <h2>Start a conversation</h1>
-                        <p>
-                            Start a discussion to inquire more information about it.
-                            <span class="link">Learn how.</span>
-                        </p>
+                    <p>
+                        Start a discussion to inquire more information about it.
+                        <span class="link">Learn how.</span>
+                    </p>
                 </div>
             </div>
             <h1>Step-by-Step Guide</h1>
@@ -67,26 +67,27 @@
                     apply.</p>
                 <form class="form-container">
                     <div class="checkbox-container">
-                        <checkbox name="letter-of-protection" id="letter-of-protection"></checkbox>
+                        <input type="checkbox" name="letter-of-protection" id="letter-of-protection"></input>
                         <label for="letter-of-protection">Letter of Protection</label>
                     </div>
                     <div class="checkbox-container">
-                        <checkbox name="medical-bill" id="medical-bill"></checkbox>
+                        <input type="checkbox" name="medical-bill" id="medical-bill"></input>
                         <label for="medical-bill">Medical Bill</label>
                     </div>
                     <div class="checkbox-container">
-                        <checkbox name="affidavit" id="affidavit"></checkbox>
+                        <input type="checkbox" name="affidavit" id="affidavit"></input>
                         <label for="affidavit">Affidavit</label>
                     </div>
                     <div class="checkbox-container">
-                        <checkbox name="prescription" id="prescription"></checkbox>
+                        <input type="checkbox" name="prescription" id="prescription"></input>
                         <label for="prescription">Prescription</label>
                     </div>
                     <div class="checkbox-container">
-                        <checkbox name="others" id="others"></checkbox>
+                        <input type="checkbox" name="others" id="others"></input>
                         <label for="others">Others</label>
                     </div>
                 </form>
+                <button class="link" id="close-btn">Close</button>
             </div>
         </div>
     </div>
