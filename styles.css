@@ -23,3 +23,11 @@ body {
     border-radius: 20px;
     background: white;
 }
+
+.top-container {
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+}
