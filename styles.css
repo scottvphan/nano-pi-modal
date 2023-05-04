@@ -8,6 +8,8 @@ body {
 .link {
     color: rgb(0, 176, 212);
     cursor: pointer;
+    background: white;
+    border: none;
 }
 
 .circle {
@@ -27,7 +29,7 @@ body {
     text-align: end;
 }
 
-.help-modal {
+.modal {
     width: 80%;
     height: 75%;
     border-radius: 20px;
@@ -36,11 +38,18 @@ body {
     top: 10%;
     left: 10%;
     padding: 25px;
-    display: none;
+}
+
+.help-modal {
+    background: white;
 }
 
 .top-container {
     text-align: center;
+}
+
+.top-container button {
+    font-size: 1rem;
 }
 
 .cards-container {
@@ -59,6 +68,13 @@ body {
     gap: 1em;
 }
 
-.dont-show-again-modal{
+.hidden {
     display: none;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    
 }
