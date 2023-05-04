@@ -7,21 +7,35 @@ body {
 
 .link {
     color: rgb(0, 176, 212);
+    cursor: pointer;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 200px;
 }
 
 .backdrop {
     z-index: -1;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100vw;
     height: 100vh;
     position: absolute;
 }
 
+.dont-show-again {
+    text-align: end;
+}
+
 .help-modal {
     width: 80%;
-    height: 85%;
+    height: 75%;
     border-radius: 20px;
     background: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 25px;
 }
 
 .top-container {
@@ -30,4 +44,20 @@ body {
 
 .cards-container {
     display: flex;
+    justify-content: center;
+    gap: 12em;
+    padding: 5em;
+    margin: 1em 4em;
+}
+
+.help-card-container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    gap: 1em;
+}
+
+.dont-show-again-modal{
+    display: none;
 }
