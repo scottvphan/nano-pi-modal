@@ -107,13 +107,22 @@ body {
     font-size: 1.125rem;
 }
 
+.lop-header {
+    display: flex;
+    justify-content: center;
+}
+
 .lop-header-container {
     background: white;
-    border-bottom: 1px solid lightgray;
     position: fixed;
-    top: 0;
-    left: 22%;
-    
+    padding: 1em 0;
+    border-bottom: 1px solid lightgray;
+    width: 80%;
+    text-align: center;
+}
+
+.overview-container {
+    margin-top: 43px;
 }
 
 .modal::-webkit-scrollbar {
