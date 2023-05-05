@@ -48,6 +48,15 @@ body {
     text-align: center;
 }
 
+.top-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.top-container p {
+    margin-top: 0.5em;
+}
+
 .top-container button {
     font-size: 1rem;
 }
@@ -72,9 +81,22 @@ body {
     display: none;
 }
 
+.strong {
+    font-weight: 700;
+}
+
+.image-container img {
+    margin: 75px 0;
+}
+
 .form-container {
     display: flex;
     justify-content: center;
     gap: 1em;
-    padding: 2em;
+    padding: 4em;
+    margin-bottom: 2em;
+}
+
+#close-btn {
+    font-size: 1.125rem;
 }
