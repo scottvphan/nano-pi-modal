@@ -106,3 +106,16 @@ body {
 #close-btn {
     font-size: 1.125rem;
 }
+
+.lop-header-container {
+    background: white;
+    border-bottom: 1px solid lightgray;
+    position: fixed;
+    top: 0;
+    left: 22%;
+    
+}
+
+.modal::-webkit-scrollbar {
+    display: none;
+}
