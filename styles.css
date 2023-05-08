@@ -120,6 +120,14 @@ body {
     width: 80%;
     text-align: center;
 }
+.lop-middle-container{
+    width:50%;
+    border:1px solid red;
+}
+
+.lop-img{
+    width:80%;
+}
 
 .overview-container {
     margin-top: 43px;
@@ -127,4 +135,30 @@ body {
 
 .modal::-webkit-scrollbar {
     display: none;
+}
+.green{
+    color:#66986a;
+}
+.letter-container{
+    grid-template-columns: 0.1fr 1fr 1fr;
+    display:grid;
+}
+.letter-3-container{
+    display:grid;
+    grid-template-areas: 
+    "a b c"
+    ". . d"
+    ;
+} 
+.list-3{
+    grid-area: a;
+}
+.container-3{
+    grid-area: b;
+}
+.image-1{
+    grid-area: c;
+}
+.image-2{
+    grid-area: d;
 }
