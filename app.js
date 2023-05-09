@@ -13,6 +13,7 @@ dontShowAgainButton.addEventListener("click", function () {
   helpModal.classList.add("hidden");
   dontShowAgainButton.classList.add("hidden");
   dontShowAgainModal.classList.remove("hidden");
+  submitLopRequestModal.classList.add("hidden");
 });
 
 closeBtn.addEventListener("click", function () {
