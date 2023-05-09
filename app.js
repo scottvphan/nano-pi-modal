@@ -1,10 +1,26 @@
-const dontShowAgainButton = document.querySelector("dont-show-again")
-const helpModal = document.querySelector("help-modal")
-const dontShowAgainModal = document.querySelector("dont-show-again-modal")
-const submitLopRequestModal = document.querySelector("submit-lop-request-modal")
+const dontShowAgainButton = document.querySelector(".dont-show-again");
+const helpModal = document.querySelector(".help-modal");
+const dontShowAgainModal = document.querySelector(".dont-show-again-modal");
+const submitLopRequestModal = document.querySelector(
+  ".submit-lop-request-modal"
+);
+const closeBtn = document.querySelector("#close-btn");
+const modal = document.querySelector(".modal");
+const backdrop = document.querySelector(".backdrop");
+const lopLink = document.querySelector("#lop-link");
 
-dontShowAgainButton.addEventListener(function(){
-    helpModal.classList.toggle("hidden")
-    dontShowAgainButton.classList.toggle("hidden")
-    dontShowAgainModal.classlist.toggle("hidden")
-})
+dontShowAgainButton.addEventListener("click", function () {
+  helpModal.classList.add("hidden");
+  dontShowAgainButton.classList.add("hidden");
+  dontShowAgainModal.classList.remove("hidden");
+});
+
+closeBtn.addEventListener("click", function () {
+  modal.classList.add("hidden");
+  backdrop.classList.add("hidden");
+});
+
+lopLink.addEventListener("click", function () {
+  helpModal.classList.toggle("hidden");
+  submitLopRequestModal.classList.toggle("hidden");
+});
