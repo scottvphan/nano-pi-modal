@@ -1,4 +1,4 @@
-const dontShowAgainButton = document.querySelector(".dont-show-again");
+const dontShowAgainButton = document.querySelectorAll(".dont-show-again");
 const helpModal = document.querySelector(".help-modal");
 const dontShowAgainModal = document.querySelector(".dont-show-again-modal");
 const submitLopRequestModal = document.querySelector(
@@ -9,11 +9,18 @@ const modal = document.querySelector(".modal");
 const backdrop = document.querySelector(".backdrop");
 const lopLink = document.querySelector("#lop-link");
 
-dontShowAgainButton.addEventListener("click", function () {
+dontShowAgainButton[0].addEventListener("click", function () {
   helpModal.classList.add("hidden");
-  dontShowAgainButton.classList.add("hidden");
+  dontShowAgainButton[0].classList.add("hidden");
+  dontShowAgainModal.classList.remove("hidden");
+  document.cookie = "dontShowAgain=true; path/";
+});
+
+dontShowAgainButton[1].addEventListener("click", function () {
+  dontShowAgainButton[1].classList.add("hidden");
   dontShowAgainModal.classList.remove("hidden");
   submitLopRequestModal.classList.add("hidden");
+  document.cookie = "dontShowAgain=true; path/";
 });
 
 closeBtn.addEventListener("click", function () {
@@ -25,3 +32,8 @@ lopLink.addEventListener("click", function () {
   helpModal.classList.toggle("hidden");
   submitLopRequestModal.classList.toggle("hidden");
 });
+
+if (document.cookie.includes("dontShowAgain=true")) {
+  modal.style.display = "none";
+  backdrop.style.display = "none";
+}
