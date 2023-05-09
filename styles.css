@@ -26,7 +26,10 @@ body {
 }
 
 .dont-show-again {
-    text-align: end;
+    position: fixed;
+    top: 110px;
+    right: 180px;
+    z-index: 10;
 }
 
 .modal {
