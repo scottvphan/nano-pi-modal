@@ -29,8 +29,8 @@ closeBtn.addEventListener("click", function () {
 });
 
 lopLink.addEventListener("click", function () {
-  helpModal.classList.toggle("hidden");
-  submitLopRequestModal.classList.toggle("hidden");
+  helpModal.classList.add("hidden");
+  submitLopRequestModal.classList.remove("hidden");
 });
 
 if (document.cookie.includes("dontShowAgain=true")) {
