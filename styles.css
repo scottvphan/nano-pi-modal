@@ -40,6 +40,10 @@ body {
     overflow-y: scroll;
 }
 
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
 .help-modal {
     background: white;
 }
@@ -128,10 +132,6 @@ body {
     margin-top: 43px;
 }
 
-.modal::-webkit-scrollbar {
-    display: none;
-}
-
 .lop-middle-container{
     width:50%;
     border:1px solid red;
@@ -176,7 +176,6 @@ body {
 }
 
 .other-information-container {
-    border: 1px solid red;
     text-align: center;
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
