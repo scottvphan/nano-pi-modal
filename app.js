@@ -40,6 +40,7 @@ helpBtn.addEventListener("click", function () {
   helpModal.classList.remove("hidden");
   helpBtn.classList.add("hidden");
   modal.classList.remove("hidden");
+  dontShowAgainModal.classList.add("hidden");
   backdrop.classList.remove("hidden");
   submitLopRequestModal.classList.add("hidden");
 });
@@ -54,4 +55,6 @@ if (document.cookie.includes("dontShowAgain=true")) {
   modal.classList.add("hidden");
   backdrop.classList.add("hidden");
   helpBtn.classList.remove("hidden");
+  dontShowAgainButton[0].classList.add("hidden");
+  dontShowAgainButton[1].classList.add("hidden");
 }
