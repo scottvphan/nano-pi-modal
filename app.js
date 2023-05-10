@@ -9,6 +9,7 @@ const modal = document.querySelector(".modal");
 const backdrop = document.querySelector(".backdrop");
 const lopLink = document.querySelector("#lop-link");
 const helpBtn = document.querySelector("#help-btn");
+const xBtn = document.querySelector(".x-btn");
 
 dontShowAgainButton[0].addEventListener("click", function () {
   helpModal.classList.add("hidden");
@@ -37,9 +38,20 @@ lopLink.addEventListener("click", function () {
 
 helpBtn.addEventListener("click", function () {
   helpModal.classList.remove("hidden");
+  helpBtn.classList.add("hidden");
+  modal.classList.remove("hidden");
+  backdrop.classList.remove("hidden");
+  submitLopRequestModal.classList.add("hidden");
+});
+
+xBtn.addEventListener("click", function () {
+  modal.classList.add("hidden");
+  backdrop.classList.add("hidden");
+  helpBtn.classList.remove("hidden");
 });
 
 if (document.cookie.includes("dontShowAgain=true")) {
-  modal.style.display = "none";
-  backdrop.style.display = "none";
+  modal.classList.add("hidden");
+  backdrop.classList.add("hidden");
+  helpBtn.classList.remove("hidden");
 }

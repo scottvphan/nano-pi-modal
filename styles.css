@@ -5,6 +5,10 @@ body {
     font-family: "Open Sans", Roboto, arial, sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 .link {
     color: rgb(0, 176, 212);
     cursor: pointer;
@@ -29,7 +33,7 @@ body {
     position: fixed;
     top: 110px;
     right: 180px;
-    z-index: 10;
+    z-index: 1;
 }
 
 .help-btn {
@@ -60,6 +64,16 @@ body {
 
 .modal::-webkit-scrollbar {
     display: none;
+}
+
+.x-btn {
+    border: none;
+    background: transparent;
+    position: fixed; 
+    top: 110px;
+    left: 220px;
+    color:rgb(133, 133, 133);
+    z-index: 1;
 }
 
 .help-modal {
@@ -126,6 +140,11 @@ body {
 .checkbox-container {
     display: flex;
     gap: 1em;
+}
+
+input[type="checkbox"],
+label {
+    cursor: pointer;
 }
 
 #close-btn {
