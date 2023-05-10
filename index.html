@@ -1,341 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <button class="help-btn hidden" id="help-btn"><b>?</b></button>
     <div class="backdrop"></div>
     <div class="modal">
-        <button class="x-btn">X</button>
-        <div class="help-modal">
-            <p class="link dont-show-again">Don't show this again</p>
-            <div class="modal-container">
-                <div class="top-container">
-                    <h1>John, here’s what you’ll see after closing this message.</h1>
-                    <p>
-                        You will see a message requesting a letter of protection for a client of yours. After reviewing,
-                        you
-                        might want to consider the following options. <span class="link">Skip the guide and jump to the
-                            message.</span>
-                    </p>
-                </div>
-                <div class="cards-container">
-                    <div class="help-card-container">
-                        <img src="assets/lop_image.jpg" class="circle">
-                        <h2>Provide the LOP letter</h2>
-                        <p>
-                            Respond accordingly, either by
-                            providing the letter of protection or
-                            passing on to the relevant staff.
-                            <span class="link" id="lop-link">Learn how.</span>
-                        </p>
-                    </div>
-                    <div class="help-card-container">
-                        <img src="assets/share_image.jpg" class="circle">
-                        <h2>Share With Others</h2>
-                        <p>
-                            Extend an invitation to others so they can review as well.
-                            <span class="link">Learn how.</span>
-                        </p>
-                    </div>
-                    <div class="help-card-container">
-                        <img src="assets/conversation_image.jpg" class="circle">
-                        <h2>Start a conversation</h1>
-                            <p>
-                                Start a discussion to inquire more information about it.
-                                <span class="link">Learn how.</span>
-                            </p>
-                    </div>
-                </div>
-                <h1>Step-by-Step Guide</h1>
-                <img src="assets/scroll-down.png" class="scroll-down-img" />
+      <button class="x-btn">X</button>
+      <div class="help-modal">
+        <p class="link dont-show-again">Don't show this again</p>
+        <div class="modal-container">
+          <div class="top-container">
+            <h1>John, here’s what you’ll see after closing this message.</h1>
+            <p>
+              You will see a message requesting a letter of protection for a
+              client of yours. After reviewing, you might want to consider the
+              following options.
+              <span class="link">Skip the guide and jump to the message.</span>
+            </p>
+          </div>
+          <div class="cards-container">
+            <div class="help-card-container">
+              <img src="assets/lop_image.jpg" class="circle" />
+              <h2>Provide the LOP letter</h2>
+              <p>
+                Respond accordingly, either by providing the letter of
+                protection or passing on to the relevant staff.
+                <span class="link" id="lop-link">Learn how.</span>
+              </p>
             </div>
+            <div class="help-card-container">
+              <img src="assets/share_image.jpg" class="circle" />
+              <h2>Share With Others</h2>
+              <p>
+                Extend an invitation to others so they can review as well.
+                <span class="link">Learn how.</span>
+              </p>
+            </div>
+            <div class="help-card-container">
+              <img src="assets/conversation_image.jpg" class="circle" />
+              <h2>Start a conversation</h2>
+              <p>
+                Start a discussion to inquire more information about it.
+                <span class="link">Learn how.</span>
+              </p>
+            </div>
+          </div>
+          <h1>Step-by-Step Guide</h1>
+          <img src="assets/scroll-down.png" class="scroll-down-img" />
         </div>
-        <div class="dont-show-again-modal hidden">
-            <div class="modal-container">
-                <div class="top-container">
-                    <h1>Thanks John.</h1>
-                    <p>
-                        It's great to know that you no longer require the help guide for information related to the
-                        letter
-                        of
-                        protection. If you need to revisit it, simply click on the icon that looks like the one below.
-                        It is
-                        located ____
-                    </p>
-                </div>
-                <div class="image-container">
-                    <img src="https://picsum.photos/500/500" class="circle">
-                    <p class="sub-heading">You may also want to disable the help guide for other sections of interest.
-                        Please select all that
-                        apply.
-                    </p>
-                </div>
-                <form class="form-container">
-                    <div class="checkbox-container">
-                        <input type="checkbox" name="letter-of-protection" id="letter-of-protection"></input>
-                        <label for="letter-of-protection">Letter of Protection</label>
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" name="medical-bill" id="medical-bill"></input>
-                        <label for="medical-bill">Medical Bill</label>
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" name="affidavit" id="affidavit"></input>
-                        <label for="affidavit">Affidavit</label>
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" name="prescription" id="prescription"></input>
-                        <label for="prescription">Prescription</label>
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" name="others" id="others"></input>
-                        <label for="others">Others</label>
-                    </div>
-                </form>
-                <button class="link strong" id="close-btn">Close</button>
+      </div>
+      <div class="dont-show-again-modal hidden">
+        <div class="modal-container">
+          <div class="top-container">
+            <h1>Thanks John.</h1>
+            <p>
+              It's great to know that you no longer require the help guide for
+              information related to the letter of protection. If you need to
+              revisit it, simply click on the icon that looks like the one
+              below. It is located ____
+            </p>
+          </div>
+          <div class="image-container">
+            <img src="https://picsum.photos/500/500" class="circle" />
+            <p class="sub-heading">
+              You may also want to disable the help guide for other sections of
+              interest. Please select all that apply.
+            </p>
+          </div>
+          <form class="form-container">
+            <div class="checkbox-container">
+              <input
+                type="checkbox"
+                name="letter-of-protection"
+                id="letter-of-protection"
+              />
+              <label for="letter-of-protection">Letter of Protection</label>
             </div>
+            <div class="checkbox-container">
+              <input type="checkbox" name="medical-bill" id="medical-bill" />
+              <label for="medical-bill">Medical Bill</label>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" name="affidavit" id="affidavit" />
+              <label for="affidavit">Affidavit</label>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" name="prescription" id="prescription" />
+              <label for="prescription">Prescription</label>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" name="others" id="others" />
+              <label for="others">Others</label>
+            </div>
+          </form>
+          <button class="link strong" id="close-btn">Close</button>
         </div>
-        <div class="submit-lop-request-modal hidden">
-            <p class="link dont-show-again">Don't show this again</p>
-            <div class="lop-header">
-                <div class="lop-header-container">
-                    <h1>Submit a request for a Letter of Protection</h1>
-                </div>
-            </div>
-            <div class="overview-container">
-                <div class="overview-left-container">
-                    <h2>Overview</h2>
-                    <p>
-                        The Workspace screen on the right-hand side is a dedicated area designed to streamline the
-                        prcess of
-                        initiating requests for businesses. Follow these steps.
-                    </p>
-                </div>
-                <div class="overview-right-container">
-                    <img class="overview-img" src="assets/LOP-1.png" />
-                </div>
-            </div>
-            <div class="all-letters-container">
-            <div class="letter-container">
-                <h1 class="list-number">1</h1>
-                <div class="lop-middle-container">
-                    <h1>Click <span class="green">New Request</span></h1>
-                    <p>
-                        Clicking on Request, which is located near
-                        the upper left-hand corner of the
-                        navigation, will take you to a new screen
-                        where you can click on the New Request
-                        button.
-                    </p>
-                </div>
-                <div class="lop-img-container">
-                    <img src="assets/LOP-1.png" alt="letter of protection description image" class="lop-img">
-                </div>
-            </div>
-            <div class="letter-container">
-                <h1 class="list-number">2</h1>
-                <div class="lop-middle-container">
-                    <h1>Select the <span class="green">Letter of Protection</span></h1>
-                    <p>
-                        After accessing the new request screen, you
-                        will be prompted to take an action. Choose
-                        "Letter of Protection" as the action you wish
-                        to perform.
-                    </p>
-                </div>
-                <div class="lop-img-container">
-                    <img src="assets/LOP-2.png" alt="letter of protection description image" class="lop-img">
-                </div>
-            </div>
-            <div class="letter-container">
-                <h1 class="list-number">3</h1>
-                <div class="lop-middle-container container-3">
-                    <h1>Identify the client and business <span class="green">client and business</span></h1>
-                    <p>
-                        Select or type the name of the client for
-                        whom you require the letter of protection,
-                        as well as the business that will be
-                        supplying it. If the client or business is not
-                        yet in the system, you will be prompted to
-                        create their profiles.
-                    </p>
-                </div>
-                <div class="letter-3-image-container">
-                    <img src="assets/LOP-3-1.png" alt="letter of protection description image" class="lop-img image-1">
-                    <img src="assets/LOP-3-2.png" alt="letter of protection description image" class="lop-img image-2">
-                </div>
-            </div>
-            <div class="letter-container">
-                <h1 class="list-number">4</h1>
-                <div class="lop-middle-container">
-                    <h1>Provide a <span class="green">message</span></h1>
-                    <p>
-                        After choosing specifying the patient and
-                        business information, you will be prompted
-                        to enter a message. If you have a file
-                        prepared, you can drag and drop it or click
-                        browse to upload it. You also have the
-                        option to include a formal message before
-                        uploading the file
-                    </p>
-                </div>
-                <img src="assets/LOP-4.png" alt="letter of protection description image" class="lop-img">
-            </div>
-            <div class="letter-container">
-                <h1 class="list-number">5</h1>
-                <div class="letter-5-text-container">
-                    <div class="letter-5-text-1-container">
-                        <h1>Send <span class="green">Now</span> vs <span class="green">Later</span></h1>
-                        <p class="letter-5-text-1">
-                            The final step is to decide if you want to
-                            send the request now or later. If you wish
-                            to send the request now then you need to
-                            click on the “Provide email”. You will see a
-                            screen where you can add the recipient's
-                            email address.
-                        </p>
-                    </div>
-                    <p class="letter-5-text-2">
-                        The “Share Now” button will also appear if
-                        you entered at least one email address in
-                        the “Share with others” section. By clicking
-                        on the “Share Now” button, the request will
-                        be sent to the recipient. 
-                    </p>
-                    <p class="letter-5-text-3">
-                        By leaving the “Provide email” section
-                        BLANK, the below button will appear. Press
-                        “Share Later” to create the request only.
-                    </p>
-                </div>
-                <div class="letter-5-image-container">
-                    <img src="assets/LOP-5-1.png" alt="letter of protection description image" class="lop-img">
-                    <img src="assets/LOP-5-2.png" alt="letter of protection description image" class="lop-img">
-                    <img src="assets/LOP-5-3.png" alt="letter of protection description image" class="lop-img">
-                </div>
-            </div>
-            <p class="lop-end-text">And there you have it, a few simple steps to submit a letter of protection request</p>
-            </div>
-            <div class="bg-white">                
-            <div class="other-information-container">
-                <h2>What others are doing...</h2>
-                <div class="other-information-card-container">
-                    <div class="information-cards">
-                        <p>
-                            Submit multiple requests in one
-                            go to avoid manual repetition
-                        </p>
-                        <p class="link">Learn how</p>
-                    </div>
-                </div>
-                <div class="other-information-card-container">
-                    <div class="information-cards">
-                        <p>
-                            Submit Letter of Protection
-                            request
-                        </p>
-                        <p class="link">Learn how</p>
-                    </div>
-                </div>
-                <div class="other-information-card-container">
-                    <div class="information-cards">
-                        <p>
-                            Submit Prescription request
-                        </p>
-                        <p class="link">Learn how</p>
-                    </div>
-                </div>
-                <div class="other-information-card-container">
-                    <div class="information-cards">
-                        <p>
-                            Submit Affidavit request
-                        </p>
-                        <p class="link">Learn how</p>
-                    </div>
-                </div>
-                <div class="other-information-card-container">
-                    <div class="information-cards">
-                        <p>
-                            Extend an invitation to others so
-                            they can review as we
-                        </p>
-                        <p class="link">Learn how</p>
-                    </div>
-                </div>
-                <div class="other-information-card-container">
-                    <div class="information-cards">
-                        <p>
-                            Add a new client or business
-                            during the submission process
-                        </p>
-                        <p class="link">Learn how</p>
-                    </div>
-                </div>
-                <div class="other-information-card-container">
-                    <div class="information-cards">
-                        <p>
-                            Provide the letter of protection
-                        </p>
-                        <p class="link">Learn how</p>
-                    </div>
-                </div>
-                <div class="other-information-card-container">
-                    <div class="information-cards">
-                        <p>
-                            Provide medical balance
-                        </p>
-                        <p class="link">Learn how</p>
-                    </div>
-                </div>
-                <div class="other-information-card-container">
-                    <div class="information-cards">
-                        <p>
-                            Provide prescription
-                        </p>
-                        <p class="link">Learn how</p>
-                    </div>
-                </div>
-                <div class="other-information-card-container">
-                    <div class="information-cards">
-                        <p>
-                            Extend an invitation to others so
-                            they can review as well.
-                        </p>
-                        <p class="link">Learn how</p>
-                    </div>
-                </div>
-                <div class="other-information-card-container">
-                    <div class="information-cards">
-                        <p>
-                            Provide medical balance
-                        </p>
-                        <p class="link">Learn how</p>
-                    </div>
-                </div>
-                <div class="other-information-card-container">
-                    <div class="information-cards">
-                        <p>
-                            Provide prescription
-                        </p>
-                        <p class="link">Learn how</p>
-                    </div>
-                </div>
-            </div>
-            </div>
+      </div>
+      <div class="submit-lop-request-modal hidden">
+        <p class="link dont-show-again">Don't show this again</p>
+        <div class="lop-header">
+          <div class="lop-header-container">
+            <h1>Submit a request for a Letter of Protection</h1>
+          </div>
         </div>
+        <div class="overview-container">
+          <div class="overview-left-container">
+            <h2>Overview</h2>
+            <p>
+              The Workspace screen on the right-hand side is a dedicated area
+              designed to streamline the prcess of initiating requests for
+              businesses. Follow these steps.
+            </p>
+          </div>
+          <div class="overview-right-container">
+            <img class="overview-img" src="assets/LOP-1.png" />
+          </div>
+        </div>
+        <div class="all-letters-header">
+          <h2>Five Steps</h2>
+          <p class="grey">The steps can be completed in 30 seconds or less.</p>
+        </div>
+        <div class="all-letters-container">
+          <div class="letter-container">
+            <h1 class="list-number">1</h1>
+            <div class="lop-middle-container">
+              <h1>Click <span class="green">New Request</span></h1>
+              <p>
+                Clicking on Request, which is located near the upper left-hand
+                corner of the navigation, will take you to a new screen where
+                you can click on the New Request button.
+              </p>
+            </div>
+            <div class="lop-img-container">
+              <img
+                src="assets/LOP-1.png"
+                alt="letter of protection description image"
+                class="lop-img"
+              />
+            </div>
+          </div>
+          <div class="letter-container">
+            <h1 class="list-number">2</h1>
+            <div class="lop-middle-container">
+              <h1>
+                Select the <span class="green">Letter of Protection</span>
+              </h1>
+              <p>
+                After accessing the new request screen, you will be prompted to
+                take an action. Choose "Letter of Protection" as the action you
+                wish to perform.
+              </p>
+            </div>
+            <div class="lop-img-container">
+              <img
+                src="assets/LOP-2.png"
+                alt="letter of protection description image"
+                class="lop-img"
+              />
+            </div>
+          </div>
+          <div class="letter-container">
+            <h1 class="list-number">3</h1>
+            <div class="lop-middle-container container-3">
+              <h1>
+                Identify the client and business
+                <span class="green">client and business</span>
+              </h1>
+              <p>
+                Select or type the name of the client for whom you require the
+                letter of protection, as well as the business that will be
+                supplying it. If the client or business is not yet in the
+                system, you will be prompted to create their profiles.
+              </p>
+            </div>
+            <div class="letter-3-image-container">
+              <img
+                src="assets/LOP-3-1.png"
+                alt="letter of protection description image"
+                class="lop-img image-1"
+              />
+              <img
+                src="assets/LOP-3-2.png"
+                alt="letter of protection description image"
+                class="lop-img image-2"
+              />
+            </div>
+          </div>
+          <div class="letter-container">
+            <h1 class="list-number">4</h1>
+            <div class="lop-middle-container">
+              <h1>Provide a <span class="green">message</span></h1>
+              <p>
+                After choosing specifying the patient and business information,
+                you will be prompted to enter a message. If you have a file
+                prepared, you can drag and drop it or click browse to upload it.
+                You also have the option to include a formal message before
+                uploading the file
+              </p>
+            </div>
+            <img
+              src="assets/LOP-4.png"
+              alt="letter of protection description image"
+              class="lop-img"
+            />
+          </div>
+          <div class="letter-container">
+            <h1 class="list-number">5</h1>
+            <div class="letter-5-text-container">
+              <div class="letter-5-text-1-container">
+                <h1>
+                  Send <span class="green">Now</span> vs
+                  <span class="green">Later</span>
+                </h1>
+                <p class="letter-5-text-1">
+                  The final step is to decide if you want to send the request
+                  now or later. If you wish to send the request now then you
+                  need to click on the “Provide email”. You will see a screen
+                  where you can add the recipient's email address.
+                </p>
+              </div>
+              <p class="letter-5-text-2">
+                The “Share Now” button will also appear if you entered at least
+                one email address in the “Share with others” section. By
+                clicking on the “Share Now” button, the request will be sent to
+                the recipient.
+              </p>
+              <p class="letter-5-text-3">
+                By leaving the “Provide email” section BLANK, the below button
+                will appear. Press “Share Later” to create the request only.
+              </p>
+            </div>
+            <div class="letter-5-image-container">
+              <img
+                src="assets/LOP-5-1.png"
+                alt="letter of protection description image"
+                class="lop-img"
+              />
+              <img
+                src="assets/LOP-5-2.png"
+                alt="letter of protection description image"
+                class="lop-img"
+              />
+              <img
+                src="assets/LOP-5-3.png"
+                alt="letter of protection description image"
+                class="lop-img"
+              />
+            </div>
+          </div>
+          <p class="lop-end-text">
+            And there you have it, a few simple steps to submit a letter of
+            protection request
+          </p>
+        </div>
+        <div class="bg-white">
+          <div class="other-information-container">
+            <h2>What others are doing...</h2>
+            <div class="other-information-card-container">
+              <div class="information-cards">
+                <p>
+                  Submit multiple requests in one go to avoid manual repetition
+                </p>
+                <p class="link">Learn how</p>
+              </div>
+            </div>
+            <div class="other-information-card-container">
+              <div class="information-cards">
+                <p>Submit Letter of Protection request</p>
+                <p class="link">Learn how</p>
+              </div>
+            </div>
+            <div class="other-information-card-container">
+              <div class="information-cards">
+                <p>Submit Prescription request</p>
+                <p class="link">Learn how</p>
+              </div>
+            </div>
+            <div class="other-information-card-container">
+              <div class="information-cards">
+                <p>Submit Affidavit request</p>
+                <p class="link">Learn how</p>
+              </div>
+            </div>
+            <div class="other-information-card-container">
+              <div class="information-cards">
+                <p>Extend an invitation to others so they can review as we</p>
+                <p class="link">Learn how</p>
+              </div>
+            </div>
+            <div class="other-information-card-container">
+              <div class="information-cards">
+                <p>
+                  Add a new client or business during the submission process
+                </p>
+                <p class="link">Learn how</p>
+              </div>
+            </div>
+            <div class="other-information-card-container">
+              <div class="information-cards">
+                <p>Provide the letter of protection</p>
+                <p class="link">Learn how</p>
+              </div>
+            </div>
+            <div class="other-information-card-container">
+              <div class="information-cards">
+                <p>Provide medical balance</p>
+                <p class="link">Learn how</p>
+              </div>
+            </div>
+            <div class="other-information-card-container">
+              <div class="information-cards">
+                <p>Provide prescription</p>
+                <p class="link">Learn how</p>
+              </div>
+            </div>
+            <div class="other-information-card-container">
+              <div class="information-cards">
+                <p>
+                  Extend an invitation to others so they can review as well.
+                </p>
+                <p class="link">Learn how</p>
+              </div>
+            </div>
+            <div class="other-information-card-container">
+              <div class="information-cards">
+                <p>Provide medical balance</p>
+                <p class="link">Learn how</p>
+              </div>
+            </div>
+            <div class="other-information-card-container">
+              <div class="information-cards">
+                <p>Provide prescription</p>
+                <p class="link">Learn how</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
