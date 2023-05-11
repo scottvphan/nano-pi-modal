@@ -14,12 +14,14 @@ const xBtn = document.querySelector(".x-btn");
 dontShowAgainButton[0].addEventListener("click", function () {
   helpModal.classList.add("hidden");
   dontShowAgainButton[0].classList.add("hidden");
+  dontShowAgainButton[1].classList.add("hidden");
   dontShowAgainModal.classList.remove("hidden");
   document.cookie = "dontShowAgain=true; path/";
 });
 
 dontShowAgainButton[1].addEventListener("click", function () {
   dontShowAgainButton[1].classList.add("hidden");
+  dontShowAgainButton[0].classList.add("hidden");
   dontShowAgainModal.classList.remove("hidden");
   submitLopRequestModal.classList.add("hidden");
   document.cookie = "dontShowAgain=true; path/";
